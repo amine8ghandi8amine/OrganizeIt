@@ -1,3 +1,6 @@
 # OrganizeIt
-now im construction the todo app
-NO DESIGN JUST JAVASCRIPT CODE
+A web application for organize the life of persons
+
+wath inside : Just a todo app 
+- calculator.
+- pomodoro app.
