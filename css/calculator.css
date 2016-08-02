@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Russo+One);
+#bgCalc{
+    background : #7A5B49;
+    width : 80%;
+    min-width : 150px;
+    margin-top : 50px;
+    margin-right : auto;
+    margin-left : auto;
+    min-height : 400px;
+    height : 80%;
+    border-radius : 5px;
+    box-sizing : border-box;
+    border :15px #281F1A solid;
+    display : flex;
+    
+    flex-direction : row;
+    
+    flex-wrap : wrap;
+    
+    justify-content : center;
+    
+    align-items : center;
+    
+    align-content : center;
+    /*
+    */
+}
+#bgButton{
+    width : 48%;
+    display : flex;
+    flex-direction : row;
+    flex-wrap : wrap;
+    justify-content : center;
+    align-items : center;
+    align-content : center;
+}
+#logo{
+
+    width : 30%;
+    background : #281F1A;
+    text-align : center;
+    color : #DAC8B4;
+    font-size : 25px;
+    font-family: 'Russo One', sans-serif;
+    font-weight : bold;
+    //border :5px  solid;
+    align-self:  flex-start;
+}
+#screen{
+
+    width : 96%;
+    background : #DAC8B4;
+    text-align : center;
+    color : #281F1A;
+    font-size : 25px;
+    font-family: 'Russo One', sans-serif;
+    font-weight : bold;
+    border :5px #281F1A solid;
+}
+.button{
+    cursor:pointer;
+    background : #DAC8B4;
+    text-align : center;
+    color : #A9957D;
+    font-size : 10px;
+    font-family: 'Russo One', sans-serif;
+    padding : 10px;
+    box-sizing : border-box;
+    border : #A9957D 3px solid;
+    border-radius : 5px;
+    display : inline-block;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+.grow{
+    flex-grow : 1;
+}

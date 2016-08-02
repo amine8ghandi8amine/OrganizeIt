@@ -1,0 +1,2 @@
+function All(length, width) {
+}
