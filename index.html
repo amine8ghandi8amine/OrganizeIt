@@ -16,6 +16,9 @@
     <!--Calculator-->
     <link rel="stylesheet" href="css/calculator.css">
     <!--End of calculator-->
+    <!--Calendar-->
+    <link rel="stylesheet" href="css/calendar.css">
+    <!--End of calendar-->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script>
         'use strict';
@@ -30,66 +33,102 @@
 
     <!-- Add your site or application content here -->
     <p>Hello world! This is HTML5 Boilerplate.</p>
+    <hr />
+    
+    
+    <div class="calendar-months">
+    <div class="month-element" id="0month">January</div>
+    <div class="month-element" id="1month">February</div>
+    <div class="month-element" id="2month">March</div>
+    <div class="month-element" id="3month">April</div>
+    <div class="month-element" id="4month">May</div>
+    <div class="month-element" id="5month">June</div>
+    <div class="month-element" id="6month">July</div>
+    <div class="month-element" id="7month">August</div>
+    <div class="month-element" id="8month">September</div>
+    <div class="month-element" id="9month">October</div>
+    <div class="month-element" id="10month">November</div>
+    <div class="month-element" id="11month">December</div>
+  </div>
+
+  <div class="calendar" id="calendar"> </div>
+
+  <div class="year" id="year"></div>
+    
+    
+    
+    <hr />
     <div class=".displayTodos">
         <h1>Todo app</h1>
         <form>
             <label>Add Todo</label>
             <input type="text" id="addTodoField" />
-            <label>Change Todo</label>
-            <input type="text" id="changeTodoField" />
-            <input type="number" id="numberOfTodo" />
 
         </form>
 
-        <button id="displayTodo">Display todos</button>
-        <button id="toggleAll">Toggle all</button>
         <button id="addTodo">Add Todo</button>
-        <button id="changeTodo">Change Todo</button>
         <button id="toggleCompleted">Toggle Completed</button>
+        <label>Toggle all</label><input id="toggleAll" type="checkbox" />
         <div>
-           <!--i made a change here displayTodoField -> displayedTodoField -->
+            <!--i made a change here displayTodoField -> displayedTodoField -->
             <ol id="displayedTodoField"></ol>
+        <button id="saveAll">Save All</button>
         </div>
     </div>
-<hr />
-  <!--Calculator-->
-   <div id="bgCalc">
-    <p id="logo">CALCULATOR</p>
-    <input id="screen" type="text" maxlength="40" name="Display" readonly="true" placeholder="0">
-    <!--<p id="screen"><span id="linking">|</span><span id="number">0</span></p>-->
-    <div id="bgButton">
-    <p class="button" id=0>0</p>
-    <p class="button" id=1>1</p>
-    <p class="button" id=2>2</p>
-    <p class="button" id=3>3</p>
-    <p class="button" id=4>4</p>
-    <p class="button" id=5>5</p>
-    <p class="button" id=6>6</p>
-    <p class="button" id=7>7</p>
-    <p class="button" id=8>8</p>
-    <p class="button" id=9>9</p>
-    <p class="button grow" id="plusMinus">+/-</p>
-    <p class="button grow" id=".">.</p>
+    <hr />
+    <!--Pomodoro-->
+      <h1 id="timer">00 : 00 . 000</h1>
+    <input id="workTime" type="number">
+    <p id="leftWork">-</p>
+      <button id="toggle">Start</button>
+   <button id="reset">Reset</button>
+    <p id="rightWork">-</p>
+<!--
+      <h1 id="breakTimer">00 : 00 . 000</h1>
+    <input id="breakTime" type="number" name="break" value="1">
+    <p id="leftBreak">-</p>
+      <button id="toggle">Start</button>
+   <button id="reset">Reset</button>
+    <p id="rightWork">-</p>
+    -->
+    <!--Calculator-->
+    <div id="bgCalc">
+        <p id="logo">CALCULATOR</p>
+        <input id="screen" type="text" maxlength="40" name="Display" readonly="true" placeholder="0">
+        <!--<p id="screen"><span id="linking">|</span><span id="number">0</span></p>-->
+        <div id="bgButton">
+            <p class="button" id=0>0</p>
+            <p class="button" id=1>1</p>
+            <p class="button" id=2>2</p>
+            <p class="button" id=3>3</p>
+            <p class="button" id=4>4</p>
+            <p class="button" id=5>5</p>
+            <p class="button" id=6>6</p>
+            <p class="button" id=7>7</p>
+            <p class="button" id=8>8</p>
+            <p class="button" id=9>9</p>
+            <p class="button grow" id="plusMinus">+/-</p>
+            <p class="button grow" id=".">.</p>
+        </div>
+        <div id="bgButton">
+            <p class="button" id="multiply">*</p>
+            <p class="button" id="-">-</p>
+            <p class="button" id="+">+</p>
+            <p class="button" id="%">%</p>
+            <p class="button" id="divise">/</p>
+            <p class="button" id="C">C</p>
+            <p class="button" id="AC">AC</p>
+            <p class="button" id="EXP">EXP</p>
+            <p class="button grow" id="=">=</p>
+            <p class="button grow" "On/Off">On/Off</p>
+        </div>
+
+
     </div>
-    <div id="bgButton">
-    <p class="button" id="multiply">*</p>
-    <p class="button" id="-">-</p>
-    <p class="button" id="+">+</p>
-    <p class="button" id="%">%</p>
-    <p class="button" id="divise">/</p>
-    <p class="button" id="C">C</p>
-    <p class="button" id="AC">AC</p>
-    <p class="button" id="EXP">EXP</p>
-    <p class="button grow" id="=">=</p>
-    <p class="button grow" "On/Off" >On/Off</p>
-    </div>
-    
-    
-</div>
-     <!--End of Calculator-->
-     
-     
-     
+    <!--End of Calculator-->
+
+
+
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
@@ -98,11 +137,20 @@
     <script src="js/main.js"></script>
     <!-------Js File's------>
     <script src="js/all/all.js"></script>
+    <!--------todo js----------------->
     <script src="js/all/todo/todo.js"></script>
-        <script src="js/view/viewTodo.js"></script>
-        <script src="js/all/calculator/calculator.js"></script>
-        <script src="js/view/viewCalc.js"></script>
-
+    <script src="js/view/viewTodo.js"></script>
+    <!--------Calculator js----------------->
+    <script src="js/all/calculator/calculator.js"></script>
+    <script src="js/view/viewCalc.js"></script>
+    <!--------pomodoro js----------------->
+<script src="js/all/pomodoro/pomodoro.js"></script>
+    <script src="js/view/viewPomodoro.js"></script>
+    <!-------EndOf Js File's------>
+        <!--------calendar js----------------->
+<!--<script src="js/all/temp.js"></script>-->
+   <script src="js/all/calendar/calendar.js"></script>
+   <script src="js/view/viewCalendar.js"></script>
     <!-------EndOf Js File's------>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
